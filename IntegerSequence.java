@@ -30,8 +30,11 @@ public class Range implements IntegerSequence{
       if ((current - end) > 0)return true;
       return false;
     }
-
   //@throws NoSuchElementException
-  public int next(){    }
+  public int next(){
+      if (hasNext) throw NoSuchElementException("there is nothing after in this sequence");
+      current ++;
+      return (current-1);
+  }
 
 }
