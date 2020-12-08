@@ -15,12 +15,12 @@ public class Range implements IntegerSequence{
       return (Math.abs(start - end)+1);
     }
   public boolean hasNext(){
-      if ((current - end) > 0)return true;
-      return false;
+      if ((current - end) > 0)return false;
+      return true;
     }
   //@throws NoSuchElementException
   public int next(){
-      if (hasNext()) throw new NoSuchElementException("there is nothing after in this sequence");
+      if (!hasNext()) throw new NoSuchElementException("there is nothing after in this sequence");
       current ++;
       return (current-1);
   }
