@@ -32,6 +32,7 @@ public class Tester {
             testOut = "reset() failed on IntegerSequence b";
         }
         System.out.println(testOut);
+
     }
     public static String sequenceToString(IntegerSequence r){
         String str = "";
@@ -45,6 +46,5 @@ public class Tester {
     //this is steven lei's tester
 
 
-    int[]nums = {1,3,5,0,-1,3,9};
-    IntegerSequence as = new ArraySequence(nums);
+
 }
